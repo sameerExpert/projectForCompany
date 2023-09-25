@@ -1,0 +1,627 @@
+
+/* ------------------------------------NAVBAR STARTS---------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x:hidden ;
+   }
+   html{
+       overflow-x:hidden ;
+   }
+
+   .header{
+    background-color:rgb(24, 22, 22);
+    display: flex;
+    flex-direction: column;
+   }
+   .nav1{
+    width: 100%;
+
+   }
+   .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+   }
+   .nav-list1{
+    flex-direction: row;
+    gap: 1rem;
+   }
+   .free{
+    display: flex;
+    gap: .5rem;
+   }
+.a{
+    font-size:small ;
+    text-decoration: none;
+}
+.a:link,.a:visited{
+    color:#959595;
+    font-weight: 500;
+}
+a:hover{
+    text-decoration: underline;
+}
+.conatiner1{
+    padding: 0px;
+    width: 100%;
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:initial;
+}
+
+.nav-list2{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+.list1{
+    display: flex;
+    gap: .5rem;
+}
+
+.nav2{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+}
+
+.container2{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: initial; */
+    justify-content: space-between;
+    position:sticky;
+}
+
+.list2{
+    width: 100%;
+    display: flex;
+    gap:700px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.Shopkart{
+    display: flex;
+    justify-content: space-between;
+    font-size: 45px;
+    width: 100%;
+}
+.p{
+    font-size:medium;
+    width:20vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: initial;
+}
+.line{
+    background-image: url('component/assects/Group\ 16.png');
+    background-repeat: no-repeat;
+    margin-top: -30px;
+    height: 5vh;
+    width: 80vw;
+    
+  
+}
+
+
+.nav-list3{
+    display: flex;
+  align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+/* .a{
+    font-size: large;
+    color: white;
+} */
+#product{
+border: none;
+background-color: transparent;
+color: white;
+font-size: 18px;
+}
+#product:hover{
+    text-decoration: underline;
+}
+.product{
+  
+    background-color: black;
+    border:none;
+}
+.a1{
+    text-decoration: none;
+    color: white;
+    font-size:18px;
+}
+.Shopkart-nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.section{
+    background: transparent;
+    background-color: black;
+    
+}
+.group15{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: initial;
+
+    background-image: url('component/assects/Group\ 15.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+.style{
+    height: 71vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fresh{
+    height: 85px;
+    width: 528px;
+    background-image: url('component/assects/Lorem\ ipsum\ dolor\ sit\ amet\,\ consectetur\ adipiscing\ elit\,\ sed\ do\ eiusmod\ tempor\ incididunt\ ut\ labore\ et\ dolore\ magna\ aliqua.\ Ut\ enim\ ad\ minim\ veniam\,\ quis\ nostrud\ exercitation\ ullamco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 25px;
+    top: 44px;
+   
+}
+.year{
+    height:  85px;
+    width: 528px;
+    background-image: url('component/assects/2022.png.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 263px;
+    top: 78px; 
+}
+
+.look{
+    height:  85px;
+    width: 528px;
+    background-image: url('component/assects/look\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 80px;
+    top: 78px; 
+}
+.seemore{
+    background: transparent;
+    color: white;
+   
+    border: 1px gray solid;
+    margin-bottom: 4px;
+}
+
+@media (max-width:826px){
+
+    .menu{
+        display: block;
+    }
+
+    .p{
+        display: none;
+    }
+    .line{
+        border-radius: 70%;
+        height: .3vh;
+    }
+    
+    .mobile-nav-list3{
+        width: 100%;
+        height: 60vh;
+        background:  rgb(10, 10, 10);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    .nav-list3{
+        position: relative;
+        height: 40vh;
+    }
+    .nav-list3{
+      align-items: center;
+      flex-direction: column;
+      margin-top: 90px;
+    }
+    .visible .nav-list3{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible; 
+    }
+    .container2{
+        display: none;
+    }
+    .group15{
+        width: 1070px;
+        height: 603px;
+        background-size: cover;
+        background-image: url('component/assects/Group\ 15\(1\).png');
+    }
+   
+    .style{
+        position: absolute;
+        top: 90px;
+    }
+    .fresh{
+        height: 44px;
+        width: 274px;
+        background-image: url('component/assects/fresh2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 10px;
+        top: 295px;
+      }
+      .year {
+        height: 32px;
+        width: 257px;
+        background-image: url('component/assects/20222.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 69px;
+        top: 342px;
+    }
+    .look {
+        height: 45px;
+        width: 517px;
+        background-image: url('component/assects/look2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 39px;
+        top: 388px;
+      }
+
+      .seeMore{
+        position: relative;
+        left:12px ;
+        top:251px ;
+      }
+      
+    
+
+}
+@media   (max-width:554px){
+
+    .free{
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    .f{
+        display: none;
+    }
+    .nav-list2{
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .group15{
+        width: 1070px;
+        height: 603px;
+        background-image: url('component/assects/Group\ 15\(1\).png');
+        background-size: cover;
+        background-origin: content-box;
+    }
+
+    .style{
+        position: absolute;
+        top: 90px;
+    }
+    .fresh{
+        height: 44px;
+        width: 274px;
+        background-image: url('component/assects/fresh2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 10px;
+        top: 295px;
+      }
+      .year {
+        height: 32px;
+        width: 257px;
+        background-image: url('component/assects/20222.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 69px;
+        top: 342px;
+    }
+    .look {
+        height: 45px;
+        width: 517px;
+        background-image: url('component/assects/look2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 39px;
+        top: 388px;
+      }
+
+      .seeMore{
+        position: relative;
+        left:12px ;
+        top:251px ;
+      }
+
+
+}
+
+@media (max-width:390) {
+    
+
+    .nav-list1>.a{
+        font-size: 10px;
+    }
+    .conatiner1{
+        padding-left: -2rem;
+    }
+    .nav-list2{
+        display: flex;
+        gap: 1rem;
+        padding-left: -2rem;
+    }
+    .nav-list1{
+        padding-left: -2rem;
+    }
+    .group13{
+        width: 1070px;
+        height: 603px;
+        background-size: contain;
+        background-image: url('component/assects/Group\ 15\(1\).png');
+    }
+    .style{
+        position: relative;
+        top: 20px;
+    }
+    .fresh{
+        height: 44px;
+        width: 274px;
+        background-image: url('component/assects/fresh2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 75px;
+        top: -180px;
+      }
+      .year {
+        height: 32px;
+        width: 257px;
+        background-image: url('component/assects/20222.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 152px;
+        top: -147px;
+    }
+    .look {
+        height: 45px;
+        width: 517px;
+        background-image: url('component/assects/look2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 95px;
+        top: -129px;
+      }
+      .sec3{
+        margin-top: 40px;
+      }
+    
+}
+
+/*------------------------------------------------- NAVBAR ENDS--------------------------------------------------------- */
+
+/*------------------------------------------------- PRODUCT START------------------------------------------------------- */
+.main{
+    margin-bottom: 2rem;
+    height: 100vh;
+}
+.fech{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}
+.NewProduct{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.newproduct-list{
+    display: flex;
+    align-items: center;
+    gap: 398px;
+}
+.arrow{
+    display: flex;
+    justify-content: space-around;
+    width: 202px;
+}
+.arrow2{
+    background-image: url('component/assects/Arrow\ 2.png');
+  
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 12px;
+}
+.arrow1{
+    background-image: url('component/assects/Arrow\ 1.png');
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 12px;
+}
+.n{
+    margin-top:2rem ;
+    margin-bottom:21px ;
+    font-size: 60px;
+    width: 566px;
+    color: black;
+   
+
+}
+.line1{
+    background-image: url('component/assects/Group\ 17.png');
+    background-repeat: no-repeat;
+    width: 410px;
+    height: 7vh;
+    position: relative;
+    top: -57px;
+    left: 52px;
+
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.nav4{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.product{
+    background-color: snow;
+    display: flex;
+    
+    overflow-x: scroll;
+}
+.product-item{
+    display: flex;
+    gap: 2rem;
+}
+
+.a2{
+    font-size:500 ;
+    text-decoration: none;
+}
+.a2:link,.a2:visited{
+    color:#000000;
+    font-weight: 500;
+}
+/*------------------------------------------------- PRODUCT ENDS------------------------------------------------------- */
+
+.footer{
+    /* height: 100vh; */
+    margin-top: 24rem;
+    background-image: url('component/assects/18591063.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.sec3{
+    display: flex;
+    flex-direction: column;
+    background-image: url('component/assects/18591063.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    gap:3rem
+    
+}
+.contact{
+    /* height: 100vh; */
+    display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 17rem;
+}
+.cont{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+   
+    /* justify-content: space-evenly; */
+}
+
+.NEWS{
+    font-size: 40px;
+}
+.GET{
+    font-size: 16px;
+    width: 22vw;
+}
+.form{
+    margin-right: 57px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.line6{
+    background-image: url('component/assects/Line\ 19.png');
+    background-repeat: no-repeat;
+    height: 1vh;
+    width: 31vw;
+}
+.Get{
+    display: flex;
+}
+
+.getin{
+    background-image: url('component/assects/get\ in\ touch.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 513vw;
+    height: 40vh;
+    margin-left: 10px;
+}
+.button{
+    background-image: url('component/assects/Button.png');
+    
+    background-repeat: no-repeat;
+   
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 105px;
+}
+.lastfoot{
+    background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
